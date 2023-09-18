@@ -1,27 +1,60 @@
+export type Status = 'todo' | 'in-progress' | 'done'
 export type Task = {
   title: string,
   id: string,
+  status: Status,
   points?: number
 }
 
-export const tasks: Array<Task> = [
+export const statuses: Status[] = ['todo', 'in-progress', 'done']
+
+export const tasks: Task[] = [
   {
-    title: 'Do Market Research',
     id: 'BUS-1',
-    points: 5,
+    title: 'Market research',
+    status: 'done',
+    points: 5
   },
   {
-    title: 'Competitor analysis',
     id: 'BUS-2',
+    title: 'Competitor analysis',
+    status: 'done',
+    points: 0
   },
   {
-    title: 'Develop Business Strategy',
     id: 'BUS-3',
-    points: 8,
+    title: 'Develop business strategy',
+    status: 'todo',
+    points: 8
   },
   {
-    title: 'Develop Marketing Strategy',
     id: 'BUS-4',
-    points: 5,
+    title: 'Identify potential partners',
+    status: 'todo',
+    points: 5
+  },
+  {
+    id: 'BUS-5',
+    title: 'Negotiate partnerships',
+    status: 'todo',
+    points: 3
+  },
+  {
+    id: 'BUS-6',
+    title: 'Develop marketing plan',
+    status: 'todo',
+    points: 5
+  },
+  {
+    id: 'BUS-7',
+    title: 'Implement marketing plan',
+    status: 'in-progress',
+    points: 8
+  },
+  {
+    id: 'BUS-8',
+    title: 'Evaluate business performance',
+    status: 'in-progress',
+    points: 2
   }
 ]
