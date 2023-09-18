@@ -1,6 +1,6 @@
 import './App.css'
-import TaskCard from './task-card'
-import { Task } from './data-tasks'
+import TaskCard from './components/TaskCard'
+import { Task } from './utils/data-tasks'
 
 function App() {
   const task: Task = {
